@@ -16,7 +16,7 @@ function LinkList() {
       icon: 'mdi:home',
       link: 'https://konstantinlindner.com',
       color: 'blue',
-      variant: 'outline',
+      variant: 'solid',
     },
     {
       name: 'Projects',
