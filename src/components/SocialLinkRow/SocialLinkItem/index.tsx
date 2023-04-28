@@ -16,7 +16,7 @@ function LinkListItem(props: LinkListItemProps) {
       <IconButton
         aria-label={name}
         rounded="full"
-        size="sm"
+        size="md"
         fontSize="xl"
         _hover={{ color }}
         icon={<Icon icon={icon} />}

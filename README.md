@@ -20,5 +20,5 @@ Clone and enter the project, then run:
 
 ```bash
 $ yarn install
-$ yarn dev # serves at localhost:3000
+$ yarn dev # serves at localhost:5173
 ```
