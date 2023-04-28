@@ -7,13 +7,11 @@ import LinkList from './components/LinkList';
 function App() {
   return (
     <Box height="100vh" width="100vw" backgroundColor="white.1">
-      <Center p="6" mx-auto>
-        <VStack>
-          <Person />
-          <SocialLinkRow />
-          <LinkList />
-        </VStack>
-      </Center>
+      <VStack p="6" mx="auto" spacing="5">
+        <Person />
+        <SocialLinkRow />
+        <LinkList />
+      </VStack>
     </Box>
   );
 }

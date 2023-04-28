@@ -1,78 +1,58 @@
-import { Icon } from '@iconify/react';
-import { ButtonGroup, Link, IconButton } from '@chakra-ui/react';
+import { ButtonGroup } from '@chakra-ui/react';
+import SocialLinkItem from './SocialLinkItem';
 
-function LinkList() {
+interface SocialLink {
+  name: string;
+  icon: string;
+  color?: string;
+  link: string;
+}
+
+function SocialLinkRow() {
+  const socialLinks: SocialLink[] = [
+    {
+      name: 'Snapchat',
+      icon: 'mdi:snapchat',
+      link: 'https://snapchat.com/add/kontedisc',
+    },
+    {
+      name: 'Instagram',
+      icon: 'mdi:instagram',
+      color: '#FF0069',
+      link: 'https://instagram.com/konstantin.lindner',
+    },
+    {
+      name: 'Spotify',
+      icon: 'mdi:spotify',
+      color: '#1cd760',
+      link: 'https://open.spotify.com/user/el9iz0421ohco9v4ps97j2l8e?si=tbfl8hbFRyaycr4iPfxOsw',
+    },
+    {
+      name: 'LinkedIn',
+      icon: 'mdi:linkedin',
+      color: '#0077B5',
+      link: 'https://linkedin.com/in/konstantinlindner',
+    },
+    {
+      name: 'Github',
+      icon: 'mdi:github',
+      link: 'https://github.com/konstantinlindner',
+    },
+  ];
+
   return (
-    <ButtonGroup pt="2">
-      <Link rounded="full" isExternal href="https://snapchat.com/add/kontedisc">
-        <IconButton
-          aria-label="Snapchat link"
-          rounded="full"
-          size="sm"
-          fontSize="xl"
-          _hover={{}}
-          icon={<Icon icon="mdi:snapchat" />}
+    <ButtonGroup>
+      {socialLinks.map((link) => (
+        <SocialLinkItem
+          key={link.name}
+          link={link.link}
+          name={link.name}
+          icon={link.icon}
+          color={link.color}
         />
-      </Link>
-      <Link
-        rounded="full"
-        isExternal
-        href="https://instagram.com/konstantin.lindner"
-      >
-        <IconButton
-          aria-label="Instagram link"
-          rounded="full"
-          size="sm"
-          fontSize="xl"
-          _hover={{ color: '#FF0069' }}
-          icon={<Icon icon="mdi:instagram" />}
-        />
-      </Link>
-      <Link
-        rounded="full"
-        isExternal
-        href="https://open.spotify.com/user/el9iz0421ohco9v4ps97j2l8e?si=tbfl8hbFRyaycr4iPfxOsw"
-      >
-        <IconButton
-          aria-label="Spotify link"
-          rounded="full"
-          size="sm"
-          fontSize="xl"
-          _hover={{ color: '#1cd760' }}
-          icon={<Icon icon="mdi:spotify" />}
-        />
-      </Link>
-      <Link
-        rounded="full"
-        isExternal
-        href="https://www.linkedin.com/in/konstantinlindner"
-      >
-        <IconButton
-          aria-label="LinkedIn link"
-          rounded="full"
-          size="sm"
-          fontSize="xl"
-          _hover={{ color: '#0077B5' }}
-          icon={<Icon icon="mdi:linkedin" />}
-        />
-      </Link>
-
-      <Link
-        rounded="full"
-        isExternal
-        href="https://github.com/konstantinlindner"
-      >
-        <IconButton
-          aria-label="Github link"
-          rounded="full"
-          size="sm"
-          fontSize="xl"
-          _hover={{}}
-          icon={<Icon icon="mdi:github" />}
-        />
-      </Link>
+      ))}
     </ButtonGroup>
   );
 }
 
-export default LinkList;
+export default SocialLinkRow;

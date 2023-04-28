@@ -1,53 +1,51 @@
-import { Icon } from '@iconify/react';
-import { Button, Link, VStack } from '@chakra-ui/react';
+import { VStack } from '@chakra-ui/react';
+import LinkItem from './LinkItem';
+
+interface linkItem {
+  link: string;
+  name: string;
+  icon: string;
+  color: string;
+  variant: string;
+}
 
 function LinkList() {
+  const linkItems: linkItem[] = [
+    {
+      name: 'Website',
+      icon: 'mdi:home',
+      link: 'https://konstantinlindner.com',
+      color: 'blue',
+      variant: 'outline',
+    },
+    {
+      name: 'Projects',
+      icon: 'mdi:code-tags',
+      color: 'blue',
+      variant: 'outline',
+      link: 'https://konstantinlindner.com/projects',
+    },
+    {
+      name: 'Gallery',
+      icon: 'mdi:image',
+      color: 'blue',
+      variant: 'outline',
+      link: 'https://konstantinlindner.com/gallery',
+    },
+  ];
+
   return (
-    <VStack pt="4">
-      <Link rounded="md" isExternal href="https://konstantinlindner.com">
-        <Button
-          leftIcon={<Icon icon="mdi:home" />}
-          variant="outline"
-          colorScheme="blue"
-          size="md"
-          w={'300px'}
-          rounded="md"
-        >
-          Website
-        </Button>
-      </Link>
-
-      <Link
-        rounded="md"
-        isExternal
-        href="https://konstantinlindner.com/projects"
-      >
-        <Button
-          leftIcon={<Icon icon="mdi:code-tags" />}
-          variant="outline"
-          colorScheme="blue"
-          size="md"
-          w={'300px'}
-        >
-          Projects
-        </Button>
-      </Link>
-
-      <Link
-        rounded="md"
-        isExternal
-        href="https://konstantinlindner.com/gallery"
-      >
-        <Button
-          leftIcon={<Icon icon="mdi:image" />}
-          variant="outline"
-          colorScheme="blue"
-          size="md"
-          w={'300px'}
-        >
-          Gallery
-        </Button>
-      </Link>
+    <VStack spacing="3">
+      {linkItems.map((link) => (
+        <LinkItem
+          key={link.name}
+          link={link.link}
+          name={link.name}
+          icon={link.icon}
+          color={link.color}
+          variant={link.variant}
+        />
+      ))}
     </VStack>
   );
 }
