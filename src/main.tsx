@@ -5,11 +5,6 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from '@chakra-ui/react';
 
 const colors = {
-  brand: {
-    900: '#1a365d',
-    800: '#153e75',
-    700: '#2a69ac',
-  },
   neutral: {
     900: '#303030',
     800: '#545454',
@@ -26,16 +21,19 @@ const colors = {
     2: '#47624F',
   },
   orange: {
-    3: '#C57B57',
-    4: '#D56F3E',
+    1: '#C57B57',
+    2: '#D56F3E',
   },
   blue: {
-    5: '#80A1D4',
-    6: '#2D82B7',
-    7: '#044B7F',
+    1: '#80A1D4',
+    2: '#2D82B7',
+    3: '#044B7F',
   },
   grey: {
     1: '#403F4C',
+  },
+  white: {
+    1: '#ffffff',
   },
 };
 
