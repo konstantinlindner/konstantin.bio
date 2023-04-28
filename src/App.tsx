@@ -22,7 +22,7 @@ function App() {
             borderRadius="full"
             boxSize="150px"
             src="https://a-us.storyblok.com/f/1013926/679x679/26ff38e205/pb_france_original_webp.webp"
-            fallbackSrc=""
+            fallbackSrc="/profile.webp"
             alt="Konstantin Lindner"
           />
           <Heading whiteSpace="nowrap">Konstantin Lindner</Heading>
