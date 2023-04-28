@@ -1,5 +1,4 @@
 import { Box, VStack } from '@chakra-ui/react';
-
 import Person from './components/Person';
 import SocialLinkRow from './components/SocialLinkRow';
 import LinkList from './components/LinkList';
