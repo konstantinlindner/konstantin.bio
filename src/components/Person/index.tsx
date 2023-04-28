@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react';
-import { Heading, HStack, Text, Image, Center, VStack } from '@chakra-ui/react';
+import { Heading, HStack, Text, Image, VStack } from '@chakra-ui/react';
 
 function Person() {
   return (
