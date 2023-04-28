@@ -1,6 +1,8 @@
 # konstantin.bio
 
-This is the repository for my personal "link in bio", also referred to as "link tree" - page.
+This is the repository for my personal "link in bio" page (sometimes referred to as "link tree").
+
+This was coded in less than a day to learn React and Chakra UI.
 
 ## Stack
 
