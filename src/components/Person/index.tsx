@@ -16,6 +16,11 @@ function Person() {
         <Text>@konstantinlindner</Text>
         <Icon color="#1D9BF0" icon="mdi:check-decagram" />
       </HStack>
+      <Text align="center" py="1" maxW="300">
+        Full-stack software developer from Sweden, now based in Canada.
+      </Text>
+
+      <Text maxW="300">📍 Vancouver, Canada</Text>
     </VStack>
   );
 }
