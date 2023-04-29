@@ -7,9 +7,9 @@ This was coded in less than a day to learn React and Chakra UI.
 ## Stack
 
 Language: Typescript  
-Framework: React
+Framework: React  
 CSS: Chakra UI  
-Build tool: Vite  
+Build tool: Vite with SWC  
 Icons: Iconify
 
 ## Setup
