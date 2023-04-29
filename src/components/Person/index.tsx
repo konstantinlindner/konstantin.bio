@@ -7,7 +7,7 @@ function Person() {
       <Image
         borderRadius="full"
         boxSize="150px"
-        src="https://a-us.storyblok.com/f/1013926/679x679/26ff38e205/pb_france_original_webp.webp"
+        src="https://res.cloudinary.com/dhiamlbjm/image/upload/v1682728237/pb_france_original_webp.webp"
         fallbackSrc="/assets/profile.webp"
         alt="Konstantin Lindner"
       />
