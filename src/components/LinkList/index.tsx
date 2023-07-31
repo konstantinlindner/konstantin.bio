@@ -26,11 +26,11 @@ function LinkList() {
       link: 'https://konstantinlindner.com/projects',
     },
     {
-      name: 'Gallery',
-      icon: 'mdi:image',
+      name: 'About',
+      icon: 'mdi:account',
       color: 'blue',
       variant: 'outline',
-      link: 'https://konstantinlindner.com/gallery',
+      link: 'https://konstantinlindner.com/about',
     },
   ];
 
