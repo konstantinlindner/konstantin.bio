@@ -6,7 +6,7 @@ import ColorModeSwitcher from './components/ColorModeSwitcher';
 
 function App() {
   return (
-    <Box height="100vh" width="100vw">
+    <Box>
       <Box display="flex" justifyContent="flex-end" pr="5" pt="5">
         <ColorModeSwitcher />
       </Box>
