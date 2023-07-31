@@ -7,7 +7,7 @@ import ColorModeSwitcher from './components/ColorModeSwitcher';
 function App() {
   return (
     <Box>
-      <Box display="flex" justifyContent="flex-end" pr="5" pt="5">
+      <Box display="flex" justifyContent="flex-end" mr="5" mt="5">
         <ColorModeSwitcher />
       </Box>
       <VStack mx="auto" spacing="5">
